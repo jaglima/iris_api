@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/jesselima/iris_train_pipeline/a3data_challenge/mlruns/460877760308877689/67ed8f1d5bf045099a60a2e39dc50e7d/artifacts
+end_time: 1717262895694
+entry_point_name: ''
+experiment_id: '460877760308877689'
+lifecycle_stage: active
+run_id: 67ed8f1d5bf045099a60a2e39dc50e7d
+run_name: righteous-skunk-328
+run_uuid: 67ed8f1d5bf045099a60a2e39dc50e7d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1717262891360
+status: 3
+tags: []
+user_id: jesselima

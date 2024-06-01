@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1717263005958
+current_stage: None
+description: ''
+last_updated_timestamp: 1717263005958
+name: champion
+run_id: 67ed8f1d5bf045099a60a2e39dc50e7d
+run_link: ''
+source: file:///Users/jesselima/iris_train_pipeline/a3data_challenge/mlruns/460877760308877689/67ed8f1d5bf045099a60a2e39dc50e7d/artifacts/random_forest_model
+status: READY
+status_message: null
+storage_location: file:///Users/jesselima/iris_train_pipeline/a3data_challenge/mlruns/460877760308877689/67ed8f1d5bf045099a60a2e39dc50e7d/artifacts/random_forest_model
+user_id: null
+version: 1
