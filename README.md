@@ -46,8 +46,14 @@ pip install -r requirements.txt
 uvicorn src.app:app --reload
 ```
 #### Docker
+Build a image
 ```bash
-docker run -d -p 8000:8000 iris-classifier-api
+cd iris_api
+docker build . -t iris_api
+```
+
+```bash
+docker run -d -p 8000:8000 iris_api
 ```
 
 ### Usage
@@ -58,7 +64,7 @@ curl -X POST "http://127.0.0.1:8000/predict" -H "Content-Type: application/json"
 ```
 
 ```bash
-curl -X POST "http://127.0.0.1:8000/predict" -H "Content-Type: application/json" -d '{"sepal_length": 6.2, "sepal_width": 3.4, "petal_length": 5.4, "petal_width": 2.3}'
+curl -X POST "http://127.0.0.1:8000/predict" -H "Content-Type: application/json" -d '{"sepal_length": 5.1, "sepal_width": 1.5, "petal_length":1, "petal_width": 1}'
 ```
 
 ```bash
