@@ -31,9 +31,8 @@ async def predict_species(payload: IrisPayload):
     ]
 
     prediction = irisModel(data)
-    response = PredictionResponse(prediction)
 
-    return {"prediction": [response]}
+    return PredictionResponse(predicted_species=prediction)
 
 
 if __name__ == "__main__":
