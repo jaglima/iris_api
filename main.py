@@ -2,6 +2,8 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from src import irisModel
 from typing import List
+import uvicorn
+
 
 app = FastAPI()
 
@@ -29,10 +31,10 @@ async def predict_species(payload: IrisPayload):
     ]
 
     prediction = irisModel(data)
-    return PredictionResponse(predicted_species=prediction)
+    response = PredictionResponse(prediction)
+
+    return {"prediction": [response]}
 
 
 if __name__ == "__main__":
-    import uvicorn
-
     uvicorn.run(app, host="127.0.0.1", port=8000)
