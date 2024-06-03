@@ -9,7 +9,7 @@ app = FastAPI()
 
 
 class PredictionResponse(BaseModel):
-    predicted_species: List[int]
+    predicted_species: List[str]
 
 
 class IrisPayload(BaseModel):
